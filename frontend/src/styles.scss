@@ -3,7 +3,7 @@
   --color-plum-light: #4a2343;
   --color-cream: #fff3e6;
   --color-dark: #212529;
-  --color-muted: #6c757d;
+  --color-muted: #6f625d;
 }
 
 html {
@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   color: var(--color-dark);
-  background: #ffffff;
+  background: var(--color-cream);
 }
 
 ::selection {
@@ -26,4 +26,101 @@ body {
   max-width: 90rem;
   margin: 0 auto;
   padding-inline: 4vw;
+}
+
+.btn-dark {
+  background: var(--color-plum);
+  border-color: var(--color-plum);
+  color: var(--color-cream);
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-dark:hover {
+  background: var(--color-plum-light);
+  border-color: var(--color-plum-light);
+  color: var(--color-cream);
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 0.5rem 1.5rem rgba(56, 25, 50, 0.18);
+}
+
+.btn-outline-dark {
+  background: rgba(255, 255, 255, 0.55);
+
+  border: 1px solid rgba(56, 25, 50, 0.08);
+
+  color: var(--color-plum);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-outline-dark:hover {
+  background: var(--color-plum);
+
+  border-color: var(--color-plum);
+
+  color: var(--color-cream);
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 0.5rem 1.5rem rgba(56, 25, 50, 0.12);
+}
+
+.card {
+  border: 1px solid rgba(56, 25, 50, 0.08) !important;
+
+  background: rgba(255, 255, 255, 0.55) !important;
+  backdrop-filter: blur(10px);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(56, 25, 50, 0.2) !important;
+
+  box-shadow: 0 1rem 2rem rgba(56, 25, 50, 0.08) !important;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.55) !important;
+
+  color: var(--color-plum) !important;
+
+  border: 1px solid rgba(56, 25, 50, 0.08) !important;
+
+  backdrop-filter: blur(10px);
+
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-dark);
+  letter-spacing: -0.03em;
+}
+
+.text-muted-custom {
+  color: var(--color-muted) !important;
 }
