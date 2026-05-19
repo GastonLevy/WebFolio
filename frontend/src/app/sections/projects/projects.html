@@ -1,4 +1,4 @@
-<section id="projects" class="container py-5">
+<section id="projects" class="projects-section py-5">
 
   <div class="mb-5">
     <p class="text-uppercase text-secondary fw-semibold mb-2">
@@ -9,7 +9,7 @@
       Real-world systems and applications
     </h2>
 
-    <p class="text-secondary col-lg-8">
+    <p class="text-secondary project-description">
       Full stack applications, scalable infrastructures and production-ready systems
       combining frontend development, backend architecture and DevOps practices.
     </p>
@@ -18,7 +18,7 @@
   <div class="row g-4">
 
     @for (project of projects; track project.title) {
-      <div class="col-lg-6">
+      <div class="col-xl-6">
         <app-project-card
           [title]="project.title"
           [description]="project.description"
