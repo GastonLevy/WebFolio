@@ -11,17 +11,17 @@ export const PROJECTS = [
     logo: 'images/projects/LogoCourseEngine.png',
 
     shortDescription:
-      'Frontend-only Angular platform designed to render multiple course landing pages dynamically from JSON configuration.',
+      'Frontend-only Angular platform that renders multiple course landing pages dynamically from JSON configuration.',
 
     overview:
-      'Course Engine is a multi-course landing page platform built with Angular. The application receives structured JSON data and renders complete course pages dynamically, allowing different courses to be displayed without changing the application structure.',
+      'Course Engine is a multi-course landing page platform built with Angular. It renders complete course pages from structured JSON data, allowing different courses to be displayed without changing the application structure.',
 
     role: [
       'Organized a team of 3 developers',
-      'Taught Git and Docker workflows to the team',
+      'Taught Git, Docker and deployment workflows to the team',
       'Developed multiple frontend sections',
       'Helped structure the project workflow and task distribution',
-      'Supported the deployment pipeline setup',
+      'Configured the GitHub Actions deployment pipeline',
     ],
 
     features: [
@@ -30,15 +30,18 @@ export const PROJECTS = [
       'Multi-course page structure',
       'Config-driven content display',
       'Frontend-only architecture',
-      'Automated deployment pipeline',
+      'Automated GitHub Actions deployment',
+      'Production deployment on a VPS',
     ],
 
-    stack: ['Angular', 'TypeScript', 'Docker', 'GitHub Actions'],
+    stack: ['Angular', 'TypeScript', 'Docker', 'GitHub Actions', 'VPS'],
 
     infrastructure: [
       'Frontend-only Angular application',
       'JSON-driven content architecture',
-      'Automated deployment pipeline',
+      'Dockerized production build',
+      'GitHub Actions CI/CD pipeline',
+      'VPS deployment with Traefik reverse proxy',
     ],
 
     challenges: [
@@ -46,10 +49,11 @@ export const PROJECTS = [
       'Keeping the project frontend-only while maintaining flexibility',
       'Coordinating development inside a small team',
       'Making course content scalable through JSON configuration',
+      'Deploying the application through an automated CI/CD workflow',
     ],
 
     outcome:
-      'Delivered as a university frontend project with a reusable architecture capable of displaying multiple course landing pages through JSON-based configuration.',
+      'Delivered as a university frontend project with a reusable architecture, automated deployment and production hosting on a VPS.',
 
     images: [],
   },
@@ -66,7 +70,7 @@ export const PROJECTS = [
     logo: 'images/projects/LogoPetCenter.png',
 
     shortDescription:
-      'University adoption platform built with Symfony, focused on connecting pets with potential adopters through a structured approval workflow.',
+      'University adoption platform built with Symfony and deployed with Docker, GitHub Actions and VPS infrastructure.',
 
     overview:
       'PetCenter is a university project designed to connect animals available for adoption with people interested in adopting them. The platform manages users, pets, adoption requests and administrative approval workflows.',
@@ -76,7 +80,8 @@ export const PROJECTS = [
       'Led and supported a team of junior developers',
       'Taught the team how to work with Git and Docker',
       'Organized development sprints and task planning',
-      'Configured the deployment pipeline and published the application online',
+      'Configured the GitHub Actions deployment pipeline',
+      'Published the application on a VPS using Docker and Traefik',
     ],
 
     features: [
@@ -85,15 +90,18 @@ export const PROJECTS = [
       'Adoption request workflow',
       'Admin review process for accepting or rejecting adoption requests',
       'Structured data model for pets and adoption candidates',
+      'Automated GitHub Actions deployment',
+      'Dockerized production environment',
     ],
 
-    stack: ['Symfony', 'MySQL', 'Docker', 'GitHub Actions', 'VPS'],
+    stack: ['Symfony', 'MySQL', 'Docker', 'GitHub Actions', 'VPS', 'Traefik'],
 
     infrastructure: [
       'Dockerized Symfony application',
       'MySQL database',
-      'VPS deployment',
+      'VPS deployment with Traefik reverse proxy',
       'GitHub Actions CI/CD pipeline',
+      'Production domain with HTTPS',
     ],
 
     challenges: [
@@ -101,10 +109,11 @@ export const PROJECTS = [
       'Teaching Git and Docker basics while maintaining project progress',
       'Designing a maintainable adoption workflow',
       'Deploying the application online through automated pipelines',
+      'Running the project in a production VPS environment',
     ],
 
     outcome:
-      'Delivered as a university project and approved with the highest project grade of the year.',
+      'Delivered as a university project, deployed online with GitHub Actions and approved with the highest project grade of the year.',
 
     images: [],
   },
@@ -121,7 +130,7 @@ export const PROJECTS = [
     logo: 'images/projects/LogoTiendaYaca_white.png',
 
     shortDescription:
-      'Multi-tenant SaaS management platform designed for businesses requiring inventory, checkout, debt management and operational control.',
+      'Multi-tenant SaaS management platform for inventory, checkout, debt management and operational control.',
 
     overview:
       'TiendaYaca is an online business management platform built as a multi-tenant SaaS solution. The system allows multiple businesses and users to manage inventory, sales, debt tracking, checkout operations and technical service workflows from a centralized web platform.',
@@ -132,6 +141,7 @@ export const PROJECTS = [
       'Built business management modules and operational workflows',
       'Managed production deployments and client environments',
       'Designed role-based access systems for administrators and cashiers',
+      'Configured Docker, GitHub Actions and VPS deployment workflows',
     ],
 
     features: [
@@ -145,15 +155,20 @@ export const PROJECTS = [
       'Multi-tenant and multi-user architecture',
       'Role-based access management',
       'Real-time monitoring of carts and cash registers',
+      'Automated GitHub Actions deployment',
+      'Dockerized production environment',
     ],
 
-    stack: ['Django', 'MySQL', 'Docker', 'Python'],
+    stack: ['Django', 'MySQL', 'Docker', 'Python', 'GitHub Actions', 'VPS', 'Traefik'],
 
     infrastructure: [
       'Online SaaS architecture',
       'Multi-tenant backend structure',
       'Role-based multi-user environments',
-      'Production deployment for real business clients',
+      'Dockerized Django application',
+      'MySQL production database',
+      'GitHub Actions CI/CD pipeline',
+      'VPS deployment with Traefik reverse proxy',
     ],
 
     challenges: [
@@ -161,10 +176,11 @@ export const PROJECTS = [
       'Managing isolated business environments',
       'Implementing role-based operational workflows',
       'Building flexible business management modules for different client needs',
+      'Maintaining production deployments for real clients',
     ],
 
     outcome:
-      'Currently used by 4 business clients with 13 active operational accounts including administrators and cashiers.',
+      'Currently used by 4 business clients with 13 active operational accounts, deployed online through Docker, GitHub Actions and VPS infrastructure.',
 
     images: [],
   },
@@ -200,6 +216,7 @@ export const PROJECTS = [
       'Dockerized service deployment',
       'Media serving through Jellyfin',
       'Reverse proxy architecture with Nginx',
+      'ISP-oriented local delivery model',
     ],
 
     stack: ['Docker', 'Nginx', 'Jellyfin', 'Ubuntu', 'MikroTik', 'Linux'],
@@ -210,6 +227,7 @@ export const PROJECTS = [
       'Nginx web server and reverse proxy',
       'M3U8 stream redistribution',
       'Local network streaming delivery',
+      'Production deployments for ISP environments',
     ],
 
     challenges: [
@@ -237,7 +255,7 @@ export const PROJECTS = [
     logo: 'assets/logos/gl-logo.png',
 
     shortDescription:
-      'Angular portfolio focused on real projects, clean UI and technical case studies.',
+      'Angular portfolio focused on real projects, clean UI, technical case studies and automated deployment.',
 
     overview:
       'Personal portfolio built with Angular to showcase real-world projects, infrastructure experience and frontend architecture through a clean and responsive interface.',
@@ -247,6 +265,7 @@ export const PROJECTS = [
       'Built reusable Angular components and project pages',
       'Implemented responsive layouts and custom SCSS styling',
       'Structured the application around reusable JSON-driven project data',
+      'Configured Docker, Nginx, GitHub Actions and VPS deployment',
     ],
 
     features: [
@@ -255,25 +274,33 @@ export const PROJECTS = [
       'Responsive UI for desktop and mobile',
       'Custom plum and cream visual design system',
       'Interactive project cards and hover states',
+      'Automated GitHub Actions deployment',
+      'Dockerized Angular production build served with Nginx',
     ],
 
-    stack: ['Angular', 'TypeScript', 'SCSS', 'Bootstrap'],
+    stack: ['Angular', 'TypeScript', 'SCSS', 'Bootstrap', 'Docker', 'GitHub Actions', 'Nginx', 'VPS', 'Traefik'],
 
     infrastructure: [
       'Angular standalone architecture',
       'SCSS global design system',
       'Responsive Bootstrap grid',
-      'Static deployment architecture',
+      'Dockerized production build',
+      'Nginx static file server',
+      'GitHub Actions CI/CD pipeline',
+      'VPS deployment with Traefik reverse proxy',
+      'Production domain with HTTPS',
     ],
 
     challenges: [
       'Building a custom identity without relying on default Bootstrap visuals',
       'Creating reusable project structures',
       'Maintaining visual consistency across all sections',
+      'Preparing an Angular SPA for production deployment',
+      'Configuring CI/CD deployment to a VPS with Traefik',
     ],
 
     outcome:
-      'A polished portfolio platform designed to present technical projects with a professional and scalable structure.',
+      'A polished portfolio platform deployed online with Docker, Nginx, GitHub Actions and VPS infrastructure, designed to present technical projects with a professional and scalable structure.',
 
     images: [],
   },
