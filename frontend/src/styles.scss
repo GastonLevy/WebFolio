@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  font-size: 112.5%;
+}
+
+body {
+  margin: 0;
+}
+
+.app-content {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-inline: 4vw;
+}
