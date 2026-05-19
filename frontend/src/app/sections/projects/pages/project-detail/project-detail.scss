@@ -1,0 +1,7 @@
+.portfolio-feature-card:hover {
+  border-left-color: var(--color-plum-light) !important;
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 1.25rem 2.5rem rgba(56, 25, 50, 0.12) !important;
+}
