@@ -124,3 +124,21 @@ h6 {
 .text-muted-custom {
   color: var(--color-muted) !important;
 }
+
+.btn:disabled,
+.btn.disabled {
+  border-color: var(--color-plum) !important;
+
+  color: var(--color-plum) !important;
+
+  background: rgba(255, 255, 255, 0.55) !important;
+
+  opacity: 1 !important;
+
+  cursor: default;
+}
+
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+}
