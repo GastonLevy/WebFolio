@@ -4,6 +4,8 @@ export const PROJECTS = [
 
     title: 'Course Engine',
 
+    url: 'https://course-engine.gastonlevy.com/',
+
     logo: 'https://t4.ftcdn.net/jpg/15/17/21/43/360_F_1517214396_yGuTI6iIMCFqTqhnJhTzfvFVM2IAsDuf.jpg',
 
     shortDescription:
@@ -59,6 +61,8 @@ export const PROJECTS = [
     slug: 'petcenter',
 
     title: 'PetCenter',
+
+    url: 'https://petcenter.gastonlevy.com/',
 
     logo: 'https://t4.ftcdn.net/jpg/15/17/21/43/360_F_1517214396_yGuTI6iIMCFqTqhnJhTzfvFVM2IAsDuf.jpg',
 
@@ -116,6 +120,8 @@ export const PROJECTS = [
     slug: 'tienda-yaca',
 
     title: 'TiendaYaca',
+
+    url: 'https://tiendayaca.gastonlevy.com/',
 
     logo: 'https://t4.ftcdn.net/jpg/15/17/21/43/360_F_1517214396_yGuTI6iIMCFqTqhnJhTzfvFVM2IAsDuf.jpg',
 
