@@ -1,36 +1,88 @@
 <section id="projects" class="projects-section py-4">
 
-  <div class="mb-5">
-    <p class="text-uppercase text-secondary fw-semibold mb-2">
-      Selected Projects
-    </p>
+  <div class="row align-items-center mb-5">
 
-    <h2 class="display-5 fw-bold mb-3">
-      Real-world systems and applications
-    </h2>
+    <div class="col-lg-7">
 
-    <p class="text-secondary project-description">
-      Full stack applications, scalable infrastructures and production-ready systems
-      combining frontend development, backend architecture and DevOps practices.
-    </p>
+      <p class="text-uppercase text-muted-custom fw-semibold mb-2">
+        Selected Projects
+      </p>
+
+      <h2 class="display-5 fw-bold mb-3">
+        Real-world systems and applications
+      </h2>
+
+      <p class="text-muted-custom project-description mb-0">
+        Full stack applications, scalable infrastructures and production-ready systems
+        combining frontend development, backend architecture and DevOps practices.
+      </p>
+
+    </div>
+
+    <div class="col-lg-5 d-none d-lg-block">
+
+      <a class="text-decoration-none text-reset" [routerLink]="['/projects', 'personal-portfolio']">
+
+        <div class="card border-0 shadow-sm portfolio-feature-card h-100">
+
+          <div class="card-body p-4">
+
+            <p class="text-uppercase text-muted-custom fw-semibold mb-2">
+              Current Portfolio
+            </p>
+
+            <h3 class="h4 fw-bold mb-3">
+              Personal developer portfolio
+            </h3>
+
+            <p class="text-muted-custom mb-4">
+              Angular portfolio focused on real projects, clean UI and technical case studies.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2">
+
+              <span class="badge text-bg-light border px-3 py-2">
+                Angular
+              </span>
+
+              <span class="badge text-bg-light border px-3 py-2">
+                Bootstrap
+              </span>
+
+              <span class="badge text-bg-light border px-3 py-2">
+                SCSS
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </a>
+
+    </div>
+
   </div>
 
   <div class="row g-4">
 
     @for (project of projects; track project.slug) {
-      <div class="col-xl-6">
-        <a
-          class="text-decoration-none text-reset"
-          [routerLink]="['/projects', project.slug]"
-        >
-          <app-project-card
-            [title]="project.title"
-            [description]="project.shortDescription"
-            [stack]="project.stack"
-            [logo]="project.logo">
-          </app-project-card>
-        </a>
-      </div>
+
+    @if (project.slug !== 'personal-portfolio') {
+
+    <div class="col-xl-6">
+
+      <a class="text-decoration-none text-reset" [routerLink]="['/projects', project.slug]">
+        <app-project-card [title]="project.title" [description]="project.shortDescription" [stack]="project.stack"
+          [logo]="project.logo">
+        </app-project-card>
+      </a>
+
+    </div>
+
+    }
+
     }
 
   </div>
