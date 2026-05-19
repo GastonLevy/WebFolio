@@ -1,0 +1,144 @@
+@if (project) {
+  <section class="project-detail py-5">
+
+    <a
+      routerLink="/projects"
+      class="btn btn-outline-dark mb-5"
+    >
+      ← Back to Projects
+    </a>
+
+    <div class="mb-5">
+
+      <h1 class="display-4 fw-bold mb-3">
+        {{ project.title }}
+      </h1>
+
+      <p class="lead text-secondary mb-4">
+        {{ project.shortDescription }}
+      </p>
+
+      <div class="d-flex flex-wrap gap-2">
+        @for (tech of project.stack; track tech) {
+          <span class="badge text-bg-light border px-3 py-2">
+            {{ tech }}
+          </span>
+        }
+      </div>
+
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-8">
+
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body p-4">
+
+            <h2 class="h3 fw-bold mb-4">
+              Overview
+            </h2>
+
+            <p class="text-secondary mb-0">
+              {{ project.overview }}
+            </p>
+
+          </div>
+        </div>
+
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body p-4">
+
+            <h2 class="h3 fw-bold mb-4">
+              My Role
+            </h2>
+
+            <ul class="mb-0">
+              @for (item of project.role; track item) {
+                <li class="mb-3 text-secondary">
+                  {{ item }}
+                </li>
+              }
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body p-4">
+
+            <h2 class="h3 fw-bold mb-4">
+              Key Features
+            </h2>
+
+            <ul class="mb-0">
+              @for (feature of project.features; track feature) {
+                <li class="mb-3 text-secondary">
+                  {{ feature }}
+                </li>
+              }
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-4">
+
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body p-4">
+
+            <h2 class="h4 fw-bold mb-4">
+              Infrastructure
+            </h2>
+
+            <ul class="mb-0">
+              @for (item of project.infrastructure; track item) {
+                <li class="mb-3 text-secondary">
+                  {{ item }}
+                </li>
+              }
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body p-4">
+
+            <h2 class="h4 fw-bold mb-4">
+              Challenges
+            </h2>
+
+            <ul class="mb-0">
+              @for (challenge of project.challenges; track challenge) {
+                <li class="mb-3 text-secondary">
+                  {{ challenge }}
+                </li>
+              }
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-4">
+
+            <h2 class="h4 fw-bold mb-4">
+              Outcome
+            </h2>
+
+            <p class="text-secondary mb-0">
+              {{ project.outcome }}
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+}
