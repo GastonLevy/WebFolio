@@ -1,13 +1,19 @@
-FROM node:22-alpine
+FROM node:22-alpine AS build
 
 WORKDIR /app
 
 COPY frontend/package*.json ./
 
-RUN npm install
+RUN npm ci
 
 COPY frontend/ .
 
-EXPOSE 4200
+RUN npm run build
 
-CMD ["npm", "start", "--", "--host", "0.0.0.0", "--poll=1000"]
+FROM nginx:alpine
+
+COPY docker/frontend/nginx.conf /etc/nginx/conf.d/default.conf
+
+COPY --from=build /app/dist/frontend/browser /usr/share/nginx/html
+
+EXPOSE 80
