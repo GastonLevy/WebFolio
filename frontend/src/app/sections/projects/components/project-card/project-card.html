@@ -1,0 +1,21 @@
+<div class="card border-0 shadow-sm h-100">
+  <div class="card-body p-4">
+
+    <h3 class="card-title fw-bold mb-3">
+      {{ title }}
+    </h3>
+
+    <p class="card-text text-secondary mb-4">
+      {{ description }}
+    </p>
+
+    <div class="d-flex flex-wrap gap-2">
+      @for (tech of stack; track tech) {
+        <span class="badge text-bg-light border px-3 py-2">
+          {{ tech }}
+        </span>
+      }
+    </div>
+
+  </div>
+</div>
