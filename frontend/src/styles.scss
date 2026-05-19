@@ -1,9 +1,24 @@
+:root {
+  --color-plum: #381932;
+  --color-plum-light: #4a2343;
+  --color-cream: #fff3e6;
+  --color-dark: #212529;
+  --color-muted: #6c757d;
+}
+
 html {
   font-size: 112.5%;
 }
 
 body {
   margin: 0;
+  color: var(--color-dark);
+  background: #ffffff;
+}
+
+::selection {
+  background: var(--color-plum);
+  color: var(--color-cream);
 }
 
 .app-content {
