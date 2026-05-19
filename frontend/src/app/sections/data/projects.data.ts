@@ -8,7 +8,7 @@ export const PROJECTS = [
 
     github: 'https://github.com/GastonLevy/angular-course-engine',
 
-    logo: 'https://t4.ftcdn.net/jpg/15/17/21/43/360_F_1517214396_yGuTI6iIMCFqTqhnJhTzfvFVM2IAsDuf.jpg',
+    logo: 'images/projects/LogoCourseEngine.png',
 
     shortDescription:
       'Frontend-only Angular platform designed to render multiple course landing pages dynamically from JSON configuration.',
@@ -63,7 +63,7 @@ export const PROJECTS = [
 
     github: 'https://github.com/GastonLevy/pet_adoption_final',
 
-    logo: 'https://t4.ftcdn.net/jpg/15/17/21/43/360_F_1517214396_yGuTI6iIMCFqTqhnJhTzfvFVM2IAsDuf.jpg',
+    logo: 'images/projects/LogoPetCenter.png',
 
     shortDescription:
       'University adoption platform built with Symfony, focused on connecting pets with potential adopters through a structured approval workflow.',
@@ -118,7 +118,7 @@ export const PROJECTS = [
 
     github: 'https://github.com/GastonLevy/StoreOS',
 
-    logo: 'https://t4.ftcdn.net/jpg/15/17/21/43/360_F_1517214396_yGuTI6iIMCFqTqhnJhTzfvFVM2IAsDuf.jpg',
+    logo: 'images/projects/LogoTiendaYaca_white.png',
 
     shortDescription:
       'Multi-tenant SaaS management platform designed for businesses requiring inventory, checkout, debt management and operational control.',
@@ -178,7 +178,7 @@ export const PROJECTS = [
 
     github: '',
 
-    logo: 'https://t4.ftcdn.net/jpg/15/17/21/43/360_F_1517214396_yGuTI6iIMCFqTqhnJhTzfvFVM2IAsDuf.jpg',
+    logo: 'images/projects/Jellyfin_-_icon-transparent.svg.png',
 
     shortDescription:
       'Dockerized media and television infrastructure designed for ISP networks with bandwidth optimization and local streaming redistribution.',
@@ -228,7 +228,7 @@ export const PROJECTS = [
   {
     slug: 'personal-portfolio',
 
-    title: 'Personal Developer Portfolio',
+    title: 'WebFolio - Angular Portfolio',
 
     url: 'https://gastonlevy.com/',
 
