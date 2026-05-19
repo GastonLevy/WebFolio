@@ -1,6 +1,8 @@
 <section class="hero-wrapper">
 
-  <div class="row hero-section align-items-center gy-5">
+  <div class="row hero-section gy-5">
+
+    <!-- LEFT SIDE -->
 
     <div class="col-lg-7">
 
@@ -39,69 +41,173 @@
 
       </div>
 
-      <div class="row gy-4">
+      <!-- EDUCATION -->
 
-        <div class="col-12">
+      <div class="row g-3 mb-5">
 
-          <p class="fw-semibold fs-5 mb-3">
-            Core Stack
-          </p>
+        <!-- UTN -->
 
-          <div class="d-flex flex-wrap gap-2">
-            @for (tech of coreStack; track tech) {
-              <span class="badge text-bg-light border px-3 py-2 fs-6">
-                {{ tech }}
+        <div class="col-12 col-md-6">
+
+          <a
+            href="https://www.frre.utn.edu.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="education-link"
+          >
+
+            <div class="education-card education-card-horizontal">
+
+              <div class="education-logo-wrapper">
+
+                <img
+                  src="LogoUTN.webp"
+                  alt="UTN FRRe"
+                  class="education-logo"
+                >
+
+              </div>
+
+              <div class="education-content">
+
+                <p class="education-title mb-0">
+                  UTN - FRRe
+                </p>
+
+                <span class="education-subtitle">
+                  Technical Programmer Degree
+                </span>
+
+              </div>
+
+              <span class="education-arrow">
+                →
               </span>
-            }
-          </div>
+
+            </div>
+
+          </a>
 
         </div>
 
-        <div class="col-lg-6">
+        <!-- CODEFACTORY -->
 
-          <p class="fw-semibold mb-2">
-            Infrastructure
-          </p>
+        <div class="col-12 col-md-6">
 
-          <div class="d-flex flex-wrap gap-2">
-            @for (tech of infrastructureStack; track tech) {
-              <span class="badge text-bg-light border px-3 py-2">
-                {{ tech }}
+          <a
+            href="https://www.codefactory.wien/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="education-link"
+          >
+
+            <div class="education-card education-card-horizontal">
+
+              <div class="education-logo-wrapper">
+
+                <img
+                  src="CodeFactory.png"
+                  alt="CodeFactory"
+                  class="education-logo"
+                >
+
+              </div>
+
+              <div class="education-content">
+
+                <p class="education-title mb-0">
+                  CodeFactory
+                </p>
+
+                <span class="education-subtitle">
+                  Full Stack Development Program
+                </span>
+
+              </div>
+
+              <span class="education-arrow">
+                →
               </span>
-            }
-          </div>
+
+            </div>
+
+          </a>
 
         </div>
 
-        <div class="col-lg-6">
+      </div>
 
-          <p class="fw-semibold mb-2">
-            Additional Experience
-          </p>
+      <!-- CORE STACK -->
 
-          <div class="d-flex flex-wrap gap-2">
-            @for (tech of additionalStack; track tech) {
-              <span class="badge text-bg-light border px-3 py-2">
-                {{ tech }}
-              </span>
-            }
-          </div>
+      <div>
 
+        <p class="fw-semibold fs-5 mb-3">
+          Core Stack
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+          @for (tech of coreStack; track tech) {
+            <span class="badge text-bg-light border px-3 py-2 fs-6">
+              {{ tech }}
+            </span>
+          }
         </div>
 
       </div>
 
     </div>
 
-    <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+    <!-- RIGHT SIDE -->
 
-      <div class="hero-image-wrapper">
+    <div class="col-lg-5">
 
-        <img
-          src="profile_photo.jfif"
-          alt="Gastón Levy"
-          class="hero-image"
-        >
+      <div class="d-flex flex-column align-items-center">
+
+        <div class="hero-image-wrapper mb-5">
+
+          <img
+            src="profile_photo.jfif"
+            alt="Gastón Levy"
+            class="hero-image"
+          >
+
+        </div>
+
+        <div class="row w-100 gy-4">
+
+          <div class="col-12">
+
+            <p class="fw-semibold mb-2">
+              Infrastructure
+            </p>
+
+            <div class="d-flex flex-wrap gap-2">
+              @for (tech of infrastructureStack; track tech) {
+                <span class="badge text-bg-light border px-3 py-2">
+                  {{ tech }}
+                </span>
+              }
+            </div>
+
+          </div>
+
+          <div class="col-12">
+
+            <p class="fw-semibold mb-2">
+              Additional Experience
+            </p>
+
+            <div class="d-flex flex-wrap gap-2">
+              @for (tech of additionalStack; track tech) {
+                <span class="badge text-bg-light border px-3 py-2">
+                  {{ tech }}
+                </span>
+              }
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
