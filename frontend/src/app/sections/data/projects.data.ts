@@ -6,6 +6,8 @@ export const PROJECTS = [
 
     url: 'https://course-engine.gastonlevy.com/',
 
+    github: 'https://github.com/GastonLevy/angular-course-engine',
+
     logo: 'https://t4.ftcdn.net/jpg/15/17/21/43/360_F_1517214396_yGuTI6iIMCFqTqhnJhTzfvFVM2IAsDuf.jpg',
 
     shortDescription:
@@ -31,12 +33,7 @@ export const PROJECTS = [
       'Automated deployment pipeline',
     ],
 
-    stack: [
-      'Angular',
-      'TypeScript',
-      'Docker',
-      'GitHub Actions',
-    ],
+    stack: ['Angular', 'TypeScript', 'Docker', 'GitHub Actions'],
 
     infrastructure: [
       'Frontend-only Angular application',
@@ -64,6 +61,8 @@ export const PROJECTS = [
 
     url: 'https://petcenter.gastonlevy.com/',
 
+    github: 'https://github.com/GastonLevy/pet_adoption_final',
+
     logo: 'https://t4.ftcdn.net/jpg/15/17/21/43/360_F_1517214396_yGuTI6iIMCFqTqhnJhTzfvFVM2IAsDuf.jpg',
 
     shortDescription:
@@ -88,13 +87,7 @@ export const PROJECTS = [
       'Structured data model for pets and adoption candidates',
     ],
 
-    stack: [
-      'Symfony',
-      'MySQL',
-      'Docker',
-      'GitHub Actions',
-      'VPS',
-    ],
+    stack: ['Symfony', 'MySQL', 'Docker', 'GitHub Actions', 'VPS'],
 
     infrastructure: [
       'Dockerized Symfony application',
@@ -122,6 +115,8 @@ export const PROJECTS = [
     title: 'TiendaYaca',
 
     url: 'https://tiendayaca.gastonlevy.com/',
+
+    github: 'https://github.com/GastonLevy/StoreOS',
 
     logo: 'https://t4.ftcdn.net/jpg/15/17/21/43/360_F_1517214396_yGuTI6iIMCFqTqhnJhTzfvFVM2IAsDuf.jpg',
 
@@ -152,12 +147,7 @@ export const PROJECTS = [
       'Real-time monitoring of carts and cash registers',
     ],
 
-    stack: [
-      'Django',
-      'MySQL',
-      'Docker',
-      'Python',
-    ],
+    stack: ['Django', 'MySQL', 'Docker', 'Python'],
 
     infrastructure: [
       'Online SaaS architecture',
@@ -184,6 +174,10 @@ export const PROJECTS = [
 
     title: 'Streaming Infrastructure & Bandwidth Optimization',
 
+    url: '',
+
+    github: '',
+
     logo: 'https://t4.ftcdn.net/jpg/15/17/21/43/360_F_1517214396_yGuTI6iIMCFqTqhnJhTzfvFVM2IAsDuf.jpg',
 
     shortDescription:
@@ -208,14 +202,7 @@ export const PROJECTS = [
       'Reverse proxy architecture with Nginx',
     ],
 
-    stack: [
-      'Docker',
-      'Nginx',
-      'Jellyfin',
-      'Ubuntu',
-      'MikroTik',
-      'Linux',
-    ],
+    stack: ['Docker', 'Nginx', 'Jellyfin', 'Ubuntu', 'MikroTik', 'Linux'],
 
     infrastructure: [
       'Ubuntu-based VPS/server environments',
@@ -234,6 +221,59 @@ export const PROJECTS = [
 
     outcome:
       'Successfully deployed across 5 ISP environments serving between 100 and 300 weekly users each. Reduced peak-hour internet consumption by approximately 150–200 Mbps through local stream redistribution.',
+
+    images: [],
+  },
+
+  {
+    slug: 'personal-portfolio',
+
+    title: 'Personal Developer Portfolio',
+
+    url: 'https://gastonlevy.com/',
+
+    github: 'https://github.com/GastonLevy/WebFolio',
+
+    logo: 'assets/logos/gl-logo.png',
+
+    shortDescription:
+      'Angular portfolio focused on real projects, clean UI and technical case studies.',
+
+    overview:
+      'Personal portfolio built with Angular to showcase real-world projects, infrastructure experience and frontend architecture through a clean and responsive interface.',
+
+    role: [
+      'Designed the complete visual identity and design system',
+      'Built reusable Angular components and project pages',
+      'Implemented responsive layouts and custom SCSS styling',
+      'Structured the application around reusable JSON-driven project data',
+    ],
+
+    features: [
+      'Dynamic project rendering from structured data',
+      'Reusable project detail pages',
+      'Responsive UI for desktop and mobile',
+      'Custom plum and cream visual design system',
+      'Interactive project cards and hover states',
+    ],
+
+    stack: ['Angular', 'TypeScript', 'SCSS', 'Bootstrap'],
+
+    infrastructure: [
+      'Angular standalone architecture',
+      'SCSS global design system',
+      'Responsive Bootstrap grid',
+      'Static deployment architecture',
+    ],
+
+    challenges: [
+      'Building a custom identity without relying on default Bootstrap visuals',
+      'Creating reusable project structures',
+      'Maintaining visual consistency across all sections',
+    ],
+
+    outcome:
+      'A polished portfolio platform designed to present technical projects with a professional and scalable structure.',
 
     images: [],
   },
