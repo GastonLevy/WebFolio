@@ -1,0 +1,33 @@
+.about-summary {
+  max-width: 55rem;
+}
+
+.about-section .card {
+  border-radius: 1rem;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.highlight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.education-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
