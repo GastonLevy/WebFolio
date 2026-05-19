@@ -1,18 +1,34 @@
+.card {
+  cursor: pointer;
+}
+
 .project-logo-box {
-  width: 7rem;
+  width: 5.5rem;
   aspect-ratio: 1 / 1;
-  border: 1px solid #dee2e6;
+
+  border: 1px solid rgba(56, 25, 50, 0.08);
+
   border-radius: 1rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   padding: 0.75rem;
+
   flex-shrink: 0;
-  background: #fff;
+
+  background: rgba(255, 255, 255, 0.55);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .project-logo {
-  width: 5.5rem;
+  width: 4rem;
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
@@ -21,9 +37,46 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+
   overflow: hidden;
 }
 
 .badge {
   font-size: 0.75rem;
+}
+
+.project-card-link {
+  margin-top: 1rem;
+
+  color: var(--color-plum);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  opacity: 0.65;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    letter-spacing 0.2s ease;
+}
+
+.card:hover .project-card-link {
+  opacity: 1;
+
+  transform: translateX(4px);
+
+  letter-spacing: 0.01em;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1.01);
+
+  border-color: rgba(56, 25, 50, 0.2) !important;
+
+  box-shadow: 0 1.25rem 2.5rem rgba(56, 25, 50, 0.1) !important;
+}
+
+.card:hover .project-logo-box {
+  border-color: rgba(56, 25, 50, 0.2);
 }
