@@ -12,7 +12,7 @@ export class Navbar {
   navItems = [
     { label: 'Home', route: '/' },
     { label: 'Projects', route: '/projects' },
-    { label: 'About', route: '/about' },
+    { label: 'About', route: '/about-me' },
     { label: 'Contact', route: '/contact' },
   ];
 }
