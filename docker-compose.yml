@@ -1,0 +1,13 @@
+services:
+  angular:
+    build:
+      context: .
+      dockerfile: docker/frontend/Dockerfile
+    container_name: mi-portfolio-angular
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
