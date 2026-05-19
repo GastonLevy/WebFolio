@@ -1,17 +1,35 @@
 <div class="card border-0 shadow-sm h-100">
-  <div class="card-body p-4">
+  <div class="card-body p-2 p-md-3">
 
-    <h3 class="card-title fw-bold mb-3">
-      {{ title }}
-    </h3>
+    <div class="d-flex gap-3 align-items-center">
 
-    <p class="card-text text-secondary mb-4">
-      {{ description }}
-    </p>
+      <div class="flex-grow-1">
 
-    <div class="d-flex flex-wrap gap-2">
+        <h3 class="h4 card-title fw-bold mb-2">
+          {{ title }}
+        </h3>
+
+        <p class="card-text text-secondary mb-3">
+          {{ description }}
+        </p>
+
+      </div>
+
+      @if (logo) {
+        <div class="project-logo-box">
+          <img
+            [src]="logo"
+            [alt]="title"
+            class="project-logo"
+          >
+        </div>
+      }
+
+    </div>
+
+    <div class="d-flex flex-wrap gap-2 mt-3">
       @for (tech of stack; track tech) {
-        <span class="badge text-bg-light border px-3 py-2">
+        <span class="badge text-bg-light border px-2 py-1">
           {{ tech }}
         </span>
       }

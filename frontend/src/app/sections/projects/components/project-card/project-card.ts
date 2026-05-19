@@ -13,4 +13,6 @@ export class ProjectCard {
   @Input() description = '';
 
   @Input() stack: string[] = [];
+
+  @Input() logo = '';
 }
