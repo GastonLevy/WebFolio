@@ -4,6 +4,8 @@ import { Projects } from './sections/projects/projects';
 import { About } from './sections/about/about';
 import { Contact } from './sections/contact/contact';
 
+import { ProjectDetail } from './sections/projects/pages/project-detail/project-detail';
+
 export const routes: Routes = [
     {
         path: '',
@@ -14,11 +16,15 @@ export const routes: Routes = [
         component: Projects
     },
     {
+        path: 'projects/:slug',
+        component: ProjectDetail
+    },
+    {
         path: 'about-me',
         component: About
     },
     {
         path: 'contact',
         component: Contact
-    }
+    },
 ];
