@@ -1,0 +1,19 @@
+services:
+  angular:
+    image: ghcr.io/gastonlevy/webfolio:latest
+    container_name: webfolio_web
+    restart: unless-stopped
+
+    networks:
+      - web
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.webfolio.rule=Host(`gastonlevy.com`)"
+      - "traefik.http.routers.webfolio.entrypoints=web,websecure"
+      - "traefik.http.routers.webfolio.tls.certresolver=le"
+      - "traefik.http.services.webfolio.loadbalancer.server.port=80"
+
+networks:
+  web:
+    external: true
