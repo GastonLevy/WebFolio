@@ -9,9 +9,28 @@ import { RouterLink } from '@angular/router';
   styleUrl: './hero.scss',
 })
 export class Hero {
-  coreStack = ['Angular', 'Symfony', 'TypeScript', 'Docker', 'MySQL'];
+  coreStack = [
+    'ASP.NET Core',
+    'C#',
+    'Angular',
+    'TypeScript',
+    'Entity Framework Core',
+    'MySQL'
+  ];
 
-  infrastructureStack = ['Nginx', 'Linux', 'VPS', 'CI/CD', 'Reverse Proxy'];
+  infrastructureStack = [
+    'Docker',
+    'Linux',
+    'Nginx',
+    'GitHub Actions',
+    'CI/CD',
+  ];
 
-  additionalStack = ['Django', 'Streaming Systems', 'Multi-tenant SaaS'];
+  additionalStack = [
+    'Symfony',
+    'PHP',
+    'Django',
+    'Python',
+    'Networking'
+  ];
 }
